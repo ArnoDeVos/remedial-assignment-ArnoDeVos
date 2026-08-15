@@ -5,7 +5,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 
 ## Scources
 - [Docker](https://docs.docker.com/compose/) => reading the basics
-- [ChatGPT] https://chatgpt.com/share/6a80b63d-4aa4-83eb-b96c-8aed71824971 => helping setup docker for my project
+- [ChatGPT] (https://chatgpt.com/share/6a80b63d-4aa4-83eb-b96c-8aed71824971) => helping setup docker for my project
+- [ChatGPT](https://chatgpt.com/share/6a80bd59-422c-83eb-8fe3-dfbc46d00a79) => setting up node and a healthcheck
 
 ## Licence
 
