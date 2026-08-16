@@ -21,6 +21,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81de97-5f50-83ed-8fa5-2f2564b444e3) => Centralising error handling
 - [ChatGPT] (https://chatgpt.com/share/6a81e1d3-17e4-83eb-adb1-5050725d1484) => Adding base repository, CRUD
 - [ChatGPT] (https://chatgpt.com/share/6a81efb7-e91c-83ed-b9ea-656235626af3) => Adding repositories
+- [ChatGPT] (https://chatgpt.com/share/6a81f23b-cba0-83eb-bd05-a8c91bd8e6bf) => Adding a translator for JSON, rows, columns
+
 
 - Past tasks and courses
 - DEV 5 course
