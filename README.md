@@ -33,6 +33,11 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a8228e8-eae4-83eb-a4cc-1eb1352efd49) => Centralizing all repository and service construction
 - [ChatGPT] (https://chatgpt.com/share/6a823310-c110-83ed-b4ef-11ce5a97851d) => Setting up an API router
 - [ChatGPT] (https://chatgpt.com/share/6a823673-a27c-83eb-89c5-fc265e8ebf76) => Setting up an Express app and server
+- [ChatGPT] (https://chatgpt.com/share/6a823e32-add8-83eb-87d8-97035e3dcd47) => Creating a frontend API client
+- [ChatGPT] (https://chatgpt.com/share/6a823fe6-23fc-83ed-bf21-d07902ec2db3) => React authentication
+- [ChatGPT] (https://chatgpt.com/share/6a82421a-d9c4-83eb-ad60-e81e1dd19140) => React hooks
+- [ChatGPT] (https://chatgpt.com/share/6a824854-d3ac-83eb-9712-4c83b657d20a) => Add frontend formatting helpers, protected route handling and login and registration pages.
+- [ChatGPT] (https://chatgpt.com/share/6a824d84-fcf0-83ed-95e9-ef55d83231c9) => Adds the subject overview and connects the main frontend routing and startup structure.
 
 - Past tasks and courses
 - DEV V course
