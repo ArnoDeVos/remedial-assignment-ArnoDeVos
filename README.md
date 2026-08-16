@@ -19,6 +19,7 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81d31e-557c-83eb-aab8-7b1cda11dd08) => Making geometry and fingerprint tests
 - [ChatGPT] (https://chatgpt.com/share/6a81db0a-92f8-83eb-8982-7d002d144cbf) => Error handling
 - [ChatGPT] (https://chatgpt.com/share/6a81de97-5f50-83ed-8fa5-2f2564b444e3) => Centralising error handling
+- [ChatGPT] (https://chatgpt.com/share/6a81e1d3-17e4-83eb-adb1-5050725d1484) => Adding base repository, CRUD
 
 - Past tasks and courses
 - DEV 5 course
