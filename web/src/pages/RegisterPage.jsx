@@ -1,6 +1,5 @@
 /**
  * Registration page.
- *
  */
 
 import { useState } from 'react';
