@@ -16,6 +16,10 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81b9bd-d37c-83eb-87f9-4b7171283f47) => Making tables and fingerprint
 - [GIT] (https://github.com/cprosche/mulberry32) => A fast, seedable, pseudo-random number generator for JavaScript.
 - [ChatGPT] (https://chatgpt.com/share/6a81c4ec-8cbc-83eb-b08a-3b81c01852be) => Making functions in the simulated activity file
+- [ChatGPT] (https://chatgpt.com/share/6a81d31e-557c-83eb-aab8-7b1cda11dd08) => Making geometry and fingerprint tests
+- [ChatGPT] (https://chatgpt.com/share/6a81db0a-92f8-83eb-8982-7d002d144cbf) => Error handling
+- [ChatGPT] (https://chatgpt.com/share/6a81de97-5f50-83ed-8fa5-2f2564b444e3) => Centralising error handling
+
 - Past tasks and courses
 - DEV 5 course
 
