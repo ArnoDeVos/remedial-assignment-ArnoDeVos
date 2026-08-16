@@ -13,7 +13,11 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [NGINX] (https://nginx.org/en/) => better understanding
 - [KNEXJS] https://knexjs.org/guide/ => How to set it up
 - [ChatGPT] (https://chatgpt.com/share/6a81aec8-a074-83eb-a89c-7dbaa1f3830d) => making the math module of the map
-- [ChatGPT] (https://chatgpt.com/share/6a81b9bd-d37c-83eb-87f9-4b7171283f47) => Making tables
+- [ChatGPT] (https://chatgpt.com/share/6a81b9bd-d37c-83eb-87f9-4b7171283f47) => Making tables and fingerprint
+- [GIT] (https://github.com/cprosche/mulberry32) => A fast, seedable, pseudo-random number generator for JavaScript.
+- [ChatGPT] (https://chatgpt.com/share/6a81c4ec-8cbc-83eb-b08a-3b81c01852be) => Making functions in the simulated activity file
+- Past tasks and courses
+- DEV 5 course
 
 ## Licence
 
