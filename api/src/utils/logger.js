@@ -1,7 +1,7 @@
 /**
  * Minimal structured logger.
  * 
- * * Centralizes log levels and output formatting without external dependencies.
+ *  Centralizes log levels and output formatting without external dependencies.
  */
 
 /** Numeric severities used to filter log messages. */
