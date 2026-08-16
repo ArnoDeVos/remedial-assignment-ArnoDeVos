@@ -87,8 +87,12 @@ services:
       - buurtwacht
 
 volumes:
+  # Deliberately unnamed: Compose prefixes the volume with the project name, so
+  # two checkouts of this stack never share one Postgres data directory. A fixed
+  # global name let an older project's database survive here, and because
+  # Postgres only applies POSTGRES_PASSWORD when it initialises an empty data
+  # directory, the API authenticated against stale credentials forever.
   database-data:
-    name: buurtwacht-database-data
 
 networks:
   buurtwacht:
