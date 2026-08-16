@@ -31,6 +31,7 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a82259e-ef38-83eb-8070-b63221ec8867) => creation of neighbourhood and subjectcontroller
 - [ChatGPT] (https://chatgpt.com/share/6a8226d6-bb5c-83eb-be9a-eb44a1c61004) => creation of a trajectory test
 - [ChatGPT] (https://chatgpt.com/share/6a8228e8-eae4-83eb-a4cc-1eb1352efd49) => Centralizing all repository and service construction
+- [ChatGPT] (https://chatgpt.com/share/6a823310-c110-83ed-b4ef-11ce5a97851d) => Setting up an API router
 
 - Past tasks and courses
 - DEV V course
