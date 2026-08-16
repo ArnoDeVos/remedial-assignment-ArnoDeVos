@@ -12,6 +12,7 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [Vite] (https://vite.dev/guide/)
 - [NGINX] (https://nginx.org/en/) => better understanding
 - [KNEXJS] https://knexjs.org/guide/ => How to set it up
+- [ChatGPT] (https://chatgpt.com/share/6a81aec8-a074-83eb-a89c-7dbaa1f3830d) => making the math module of the map
 
 ## Licence
 
