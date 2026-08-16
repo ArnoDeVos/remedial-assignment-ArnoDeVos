@@ -33,6 +33,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a8228e8-eae4-83eb-a4cc-1eb1352efd49) => Centralizing all repository and service construction
 - [ChatGPT] (https://chatgpt.com/share/6a823310-c110-83ed-b4ef-11ce5a97851d) => Setting up an API router
 - [ChatGPT] (https://chatgpt.com/share/6a823673-a27c-83eb-89c5-fc265e8ebf76) => Setting up an Express app and server
+- [ChatGPT] (https://chatgpt.com/share/6a823e32-add8-83eb-87d8-97035e3dcd47) => Creating a frontend API client
+
 
 - Past tasks and courses
 - DEV V course
