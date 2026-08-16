@@ -1,0 +1,54 @@
+{
+  "name": "Asse",
+  "description": "A municipality in our police zone. Coordinates are plain integers in a 1000x700 grid, where one unit is roughly one metre.",
+  "bounds": { "minX": 0, "minY": 0, "maxX": 1000, "maxY": 700 },
+  "metresPerUnit": 1,
+  "zones": [
+    {
+      "code": "Z-MOLLEM",
+      "name": "Mollem",
+      "description": "Farmland and ribbon housing towards Merchtem.",
+      "polygon": [[0, 0], [420, 0], [420, 250], [0, 250]]
+    },
+    {
+      "code": "Z-ZELLIK",
+      "name": "Zellik",
+      "description": "The Brussels edge; business parks and the busiest roads.",
+      "polygon": [[420, 0], [1000, 0], [1000, 250], [420, 250]]
+    },
+    {
+      "code": "Z-ASSE",
+      "name": "Asse-centrum",
+      "description": "The town centre: market square, shops and the parish church.",
+      "polygon": [[300, 250], [700, 250], [700, 470], [300, 470]]
+    },
+    {
+      "code": "Z-BEKKERZEEL",
+      "name": "Bekkerzeel",
+      "description": "A small rural village of a few streets around the church.",
+      "polygon": [[0, 250], [300, 250], [300, 700], [0, 700]]
+    },
+    {
+      "code": "Z-RELEGEM",
+      "name": "Relegem",
+      "description": "Residential lanes between the centre and Zellik.",
+      "polygon": [[700, 250], [1000, 250], [1000, 700], [700, 700]]
+    },
+    {
+      "code": "Z-KOBBEGEM",
+      "name": "Kobbegem",
+      "description": "Quiet village streets and open fields to the south.",
+      "polygon": [[300, 470], [700, 470], [700, 700], [300, 700]]
+    }
+  ],
+  "streets": [
+    { "name": "Kerkstraat", "path": [[0, 250], [1000, 250]] },
+    { "name": "Molenlaan", "path": [[0, 470], [1000, 470]] },
+    { "name": "Brusselstraat", "path": [[300, 0], [300, 700]] },
+    { "name": "Stationsstraat", "path": [[700, 0], [700, 700]] },
+    { "name": "Parklaan", "path": [[350, 300], [650, 300], [650, 430], [350, 430], [350, 300]] },
+    { "name": "Bakkersstraat", "path": [[300, 585], [700, 585]] },
+    { "name": "Schoolstraat", "path": [[150, 0], [150, 250]] },
+    { "name": "Tramplein", "path": [[420, 120], [1000, 120]] }
+  ]
+}
