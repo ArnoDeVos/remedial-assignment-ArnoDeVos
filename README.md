@@ -24,11 +24,11 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81f23b-cba0-83eb-bd05-a8c91bd8e6bf) => Adding a translator for JSON, rows, columns
 - [ZOD] (https://zod.dev/basics) => Validation 
 - [ChatGPT] (https://chatgpt.com/share/6a81f613-5ca0-83eb-baf4-ec7d9848331e) => Validation
+- [ChatGPT] (https://chatgpt.com/share/6a820578-b6b4-83ed-beb6-33e80fbc05bd) => validation and cleaning steps before saving to database
 
 
 - Past tasks and courses
 - DEV 5 course
 
 ## Licence
-
 MIT — see [`LICENSE`](LICENSE).
