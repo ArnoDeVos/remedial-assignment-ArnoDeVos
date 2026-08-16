@@ -26,6 +26,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81f613-5ca0-83eb-baf4-ec7d9848331e) => Validation
 - [ChatGPT] (https://chatgpt.com/share/6a820daa-30b8-83eb-83a3-477b0784e866) => cleaning pipeline and validation stages
 - [ChatGPT] (https://chatgpt.com/share/6a821700-1e44-83ed-897b-afbacecc07bf) => Adding a subject & sighting service + sighting controller
+- [ChatGPT] (https://chatgpt.com/share/6a821700-1e44-83ed-897b-afbacecc07bf) => Testing pipeline
+
 
 - Past tasks and courses
 - DEV V course
