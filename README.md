@@ -38,6 +38,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a82421a-d9c4-83eb-ad60-e81e1dd19140) => React hooks
 - [ChatGPT] (https://chatgpt.com/share/6a824854-d3ac-83eb-9712-4c83b657d20a) => Add frontend formatting helpers, protected route handling and login and registration pages.
 - [ChatGPT] (https://chatgpt.com/share/6a824d84-fcf0-83ed-95e9-ef55d83231c9) => Adds the subject overview and connects the main frontend routing and startup structure.
+- [ChatGPT] (https://chatgpt.com/share/6a825296-9d5c-83eb-8ede-5bf97f692ade) => added colour and shared time filters
+
 
 - Past tasks and courses
 - DEV V course
