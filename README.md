@@ -1,7 +1,80 @@
 # Buurtwacht
 
-I chose the neighbourhood app option because it has a link with my workplace. I work at the IT-department of a local police zone. We have a project that is called "whatsapp buurtpreventiegroep". In those groups people can declare suspicious activity etc in their neighbourhoods.
+I chose the neighbourhood app option because it has a link with my workplace. I work at the IT-department of a local police zone. We have a project that is called "whatsapp buurtpreventiegroepen". In those groups people can declare suspicious activity etc in their neighbourhoods.
 Residents register sightings of people they notice on the street. Everyone can then look at those records on a map and follow a single person's reconstructed trajectory through the neighbourhood.
+
+## Features
+
+- Residents register a sighting by clicking the spot on the neighbourhood map — no coordinates are ever typed.
+- Subjects are pseudonymous: a generated reference code and a description of appearance, never a name or an address.
+- Trajectory reconstruction connects a subject's sightings into a path, splitting it into legs where more than three hours pass between observations.
+- A five-stage cleaning pipeline sanitises text, checks the timestamp and position, rejects duplicates and flags physically impossible movement.
+- The district a sighting belongs to is derived server-side from the coordinates, so it cannot be claimed by the client.
+- Activity visualisation: districts tinted by how busy they are, an hourly distribution and a contributor ranking, all aggregated in Postgres.
+- A moderation queue where a moderator accepts or rejects flagged sightings — rejected rows are hidden, never deleted.
+- JWT authentication with resident and moderator roles: reading the map is public, registering a sighting requires an account.
+
+## Running it
+
+**Requirements:** Docker and Docker Compose. 
+
+```bash
+git clone https://github.com/ArnoDeVos/remedial-assignment-ArnoDeVos
+cd remedial-assignment-ArnoDeVos
+
+# 1. Create the environment file. The defaults work as-is.
+cp .env.template .env        # Windows: copy .env.template .env
+
+# 2. Build and start everything.
+docker compose up --build
+```
+
+Then open **<http://localhost:8080>**.
+
+| Service    | URL                             | Notes                                |
+| ---------- | ------------------------------- | ------------------------------------ |
+| Web client | <http://localhost:8080>         | nginx, also proxies `/api`           |
+| API        | <http://localhost:4000/api>     | Express                              |
+| Postgres   | `localhost:5432`                | user/password/database from `.env`   |
+
+
+## Demo accounts
+
+Seeded on first boot. Password for all of them: `Buurtwacht!2026`
+
+| E-mail                       | Name      | Zone         | Role      |
+| ---------------------------- | --------- | ------------ | --------- |
+| `lotte@buurtwacht.local`     | Lotte V.  | Mollem       | resident  |
+| `samir@buurtwacht.local`     | Samir B.  | Zellik       | resident  |
+| `joke@buurtwacht.local`      | Joke D.   | Bekkerzeel   | resident  |
+| `peter@buurtwacht.local`     | Peter L.  | Relegem      | resident  |
+| `nadia@buurtwacht.local`     | Nadia K.  | Kobbegem     | resident  |
+| `moderator@buurtwacht.local` | Wijkagent | Asse-centrum | moderator |
+
+Sign in as the moderator to see the review queue with the flagged sightings the
+seed deliberately plants.
+
+## API Endpoints
+
+Below is a summary of the main API endpoints. All responses are in JSON.
+
+| Method | Endpoint | Description |
+| ------ | -------- | ----------- |
+| GET | `/api/health` | Check whether the API is running |
+| POST | `/api/auth/register` | Create a new resident account |
+| POST | `/api/auth/login` | Sign in and receive a token |
+| GET | `/api/auth/me` | Get the signed-in resident |
+| GET | `/api/neighbourhood/map` | Get the map geometry (zones and streets) |
+| GET | `/api/neighbourhood/activity` | Get activity totals per zone, hour and reporter |
+| GET | `/api/neighbourhood/trajectories` | Get reconstructed paths for several subjects at once |
+| GET | `/api/subjects` | Get all subjects |
+| GET | `/api/subjects/{id}` | Get details of a specific subject |
+| GET | `/api/subjects/{id}/trajectory` | Get the reconstructed path of a specific subject |
+| GET | `/api/sightings` | Get all sightings |
+| GET | `/api/sightings/summary` | Get counts of sightings, subjects and reporters |
+| POST | `/api/sightings` | Register a new sighting (requires sign-in) |
+| GET | `/api/sightings/review-queue` | Get all flagged sightings (moderator only) |
+| PATCH | `/api/sightings/{id}/review` | Accept or reject a flagged sighting (moderator only) |
 
 ## Scources
 - [Docker] (https://docs.docker.com/compose/) => reading the basics
@@ -44,8 +117,6 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a825a9a-76dc-83ed-8818-70820423efcd) => Registering sightings form
 - [ChatGPT] (https://chatgpt.com/share/6a825d7d-db80-83eb-8894-6b9d2863c1a0) => Added interactive map page and subject trajectory detail view
 - [ChatGPT] (https://chatgpt.com/share/6a82610d-a04c-83ed-be9e-a196b24467b0) => Added reviewpage
-
-
 - Past tasks and courses
 - DEV V course
 
