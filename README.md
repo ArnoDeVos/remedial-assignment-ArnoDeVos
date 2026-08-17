@@ -12,7 +12,7 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [Vite] (https://vite.dev/guide/)
 - [NGINX] (https://nginx.org/en/) => better understanding
 - [KNEXJS] https://knexjs.org/guide/ => How to set it up
-- [ChatGPT] (https://chatgpt.com/share/6a81aec8-a074-83eb-a89c-7dbaa1f3830d) => making the math module of the map
+- [ChatGPT] (https://chatgpt.com/share/6a81aec8-a074-83eb-a89c-7dbaa1f3830d) => Making the math module of the map
 - [ChatGPT] (https://chatgpt.com/share/6a81b9bd-d37c-83eb-87f9-4b7171283f47) => Making tables and fingerprint
 - [GIT] (https://github.com/cprosche/mulberry32) => A fast, seedable, pseudo-random number generator for JavaScript.
 - [ChatGPT] (https://chatgpt.com/share/6a81c4ec-8cbc-83eb-b08a-3b81c01852be) => Making functions in the simulated activity file
@@ -24,12 +24,12 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a81f23b-cba0-83eb-bd05-a8c91bd8e6bf) => Adding a translator for JSON, rows, columns
 - [ZOD] (https://zod.dev/basics) => Validation 
 - [ChatGPT] (https://chatgpt.com/share/6a81f613-5ca0-83eb-baf4-ec7d9848331e) => Validation
-- [ChatGPT] (https://chatgpt.com/share/6a820daa-30b8-83eb-83a3-477b0784e866) => cleaning pipeline and validation stages
+- [ChatGPT] (https://chatgpt.com/share/6a820daa-30b8-83eb-83a3-477b0784e866) => Cleaning pipeline and validation stages
 - [ChatGPT] (https://chatgpt.com/share/6a821700-1e44-83ed-897b-afbacecc07bf) => Adding a subject & sighting service + sighting controller
 - [ChatGPT] (https://chatgpt.com/share/6a821cd6-4768-83eb-8818-270151432d44) => Testing pipeline
 - [ChatGPT] (https://chatgpt.com/share/6a821f33-e7f8-83eb-a322-7d50c55f63bb) => Adding a trajectory service to turn a list of sightings into a path + adding a neighbourhoodservice to serve the map geometry and layer the activity figures on it
-- [ChatGPT] (https://chatgpt.com/share/6a82259e-ef38-83eb-8070-b63221ec8867) => creation of neighbourhood and subjectcontroller
-- [ChatGPT] (https://chatgpt.com/share/6a8226d6-bb5c-83eb-be9a-eb44a1c61004) => creation of a trajectory test
+- [ChatGPT] (https://chatgpt.com/share/6a82259e-ef38-83eb-8070-b63221ec8867) => Creation of neighbourhood and subjectcontroller
+- [ChatGPT] (https://chatgpt.com/share/6a8226d6-bb5c-83eb-be9a-eb44a1c61004) => Creation of a trajectory test
 - [ChatGPT] (https://chatgpt.com/share/6a8228e8-eae4-83eb-a4cc-1eb1352efd49) => Centralizing all repository and service construction
 - [ChatGPT] (https://chatgpt.com/share/6a823310-c110-83ed-b4ef-11ce5a97851d) => Setting up an API router
 - [ChatGPT] (https://chatgpt.com/share/6a823673-a27c-83eb-89c5-fc265e8ebf76) => Setting up an Express app and server
@@ -38,8 +38,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a82421a-d9c4-83eb-ad60-e81e1dd19140) => React hooks
 - [ChatGPT] (https://chatgpt.com/share/6a824854-d3ac-83eb-9712-4c83b657d20a) => Add frontend formatting helpers, protected route handling and login and registration pages.
 - [ChatGPT] (https://chatgpt.com/share/6a824d84-fcf0-83ed-95e9-ef55d83231c9) => Adds the subject overview and connects the main frontend routing and startup structure.
-- [ChatGPT] (https://chatgpt.com/share/6a825296-9d5c-83eb-8ede-5bf97f692ade) => added colour and shared time filters
-
+- [ChatGPT] (https://chatgpt.com/share/6a825296-9d5c-83eb-8ede-5bf97f692ade) => Added colour and shared time filters
+- [ChatGPT] (https://chatgpt.com/share/6a8255c3-f1ac-83eb-908e-399db0d2668b) => Neighbourhood svg map
 
 - Past tasks and courses
 - DEV V course
