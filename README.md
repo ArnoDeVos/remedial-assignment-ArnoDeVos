@@ -40,6 +40,8 @@ Residents register sightings of people they notice on the street. Everyone can t
 - [ChatGPT] (https://chatgpt.com/share/6a824d84-fcf0-83ed-95e9-ef55d83231c9) => Adds the subject overview and connects the main frontend routing and startup structure.
 - [ChatGPT] (https://chatgpt.com/share/6a825296-9d5c-83eb-8ede-5bf97f692ade) => Added colour and shared time filters
 - [ChatGPT] (https://chatgpt.com/share/6a8255c3-f1ac-83eb-908e-399db0d2668b) => Neighbourhood svg map
+- [ChatGPT] (https://chatgpt.com/share/6a825880-9fd4-83eb-a464-959203a7ba88) => Add activity dashboard, selectable subject list and shared time-window filter
+
 
 - Past tasks and courses
 - DEV V course
