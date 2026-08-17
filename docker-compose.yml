@@ -1,0 +1,100 @@
+# ---------------------------------------------------------------------------
+# Buurtwacht — full local stack.
+#
+# Usage:
+#   cp .env.template .env
+#   docker compose up --build
+#
+# Services:
+#   database — PostgreSQL 16, persisted in a Docker volume
+#   api      — Node.js / Express REST API
+#   web      — React / Vite frontend served by nginx
+#
+# The nginx container proxies /api requests to the API container, so the
+# browser only communicates with one origin and no CORS configuration
+# is required.
+# ---------------------------------------------------------------------------
+
+services:
+  database:
+    image: postgres:16-alpine
+    container_name: buurtwacht-database
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      # Allows access from the host with tools such as psql or DBeaver.
+      - "${DATABASE_HOST_PORT:-5432}:5432"
+    volumes:
+      - database-data:/var/lib/postgresql/data
+    healthcheck:
+      # The api service waits for this to pass before it starts, which removes
+      # the classic "database is starting up" race on a cold `up --build`.
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    networks:
+      - buurtwacht
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: buurtwacht-api
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      API_PORT: ${API_PORT:-4000}
+      POSTGRES_HOST: ${POSTGRES_HOST:-database}
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-12h}
+      BCRYPT_ROUNDS: ${BCRYPT_ROUNDS:-10}
+      RUN_MIGRATIONS_ON_BOOT: ${RUN_MIGRATIONS_ON_BOOT:-true}
+      RUN_SEEDS_ON_BOOT: ${RUN_SEEDS_ON_BOOT:-true}
+    ports:
+      - "${API_PORT:-4000}:4000"
+    healthcheck:
+      test: [ "CMD", "node", "scripts/healthcheck.js" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - buurtwacht
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: buurtwacht-web
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    networks:
+      - buurtwacht
+
+volumes:
+  # Deliberately unnamed: Compose prefixes the volume with the project name, so
+  # two checkouts of this stack never share one Postgres data directory. A fixed
+  # global name let an older project's database survive here, and because
+  # Postgres only applies POSTGRES_PASSWORD when it initialises an empty data
+  # directory, the API authenticated against stale credentials forever.
+  database-data:
+
+networks:
+  buurtwacht:
+    name: buurtwacht-network
+    driver: bridge
