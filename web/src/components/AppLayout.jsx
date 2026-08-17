@@ -12,7 +12,7 @@ import { useAuth } from '../context/AuthContext.jsx';
  * @returns {JSX.Element} The layout.
  */
 export default function AppLayout() {
-  const { resident, isSignedIn, logout } = useAuth();
+  const { resident, isSignedIn, isModerator, logout } = useAuth();
 
   return (
     <div className="shell">
@@ -30,12 +30,16 @@ export default function AppLayout() {
             Map
           </NavLink>
           <NavLink to="/subjects">Subjects</NavLink>
+          {isModerator ? <NavLink to="/review">Review</NavLink> : null}
         </nav>
 
         <div className="shell__account">
           {isSignedIn ? (
             <>
-              <span className="shell__resident">{resident.displayName}</span>
+              <span className="shell__resident">
+                {resident.displayName}
+                {isModerator ? <span className="badge badge--role">moderator</span> : null}
+              </span>
               <button type="button" className="button button--ghost" onClick={logout}>
                 Sign out
               </button>
